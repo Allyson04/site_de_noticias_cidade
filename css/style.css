@@ -1,0 +1,38 @@
+.caixa{
+    width: 400px;
+    background: url(../img/arquivos-necessarios-arredondamento-com-imagens/fundo-arredondamento.png) repeat-y;
+}
+
+.caixa h2 {
+    padding: 10px 20px 0 20px;
+    background: url(../img/arquivos-necessarios-arredondamento-com-imagens/topo2.png) no-repeat left top;
+}
+
+.caixa p{
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+
+.caixa div {
+    width: 400px;
+    height: 24px;
+    background: url(../img/arquivos-necessarios-arredondamento-com-imagens/baixo2.png) no-repeat left bottom;
+}
+
+.caixa2 {
+    width: 400px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background: #cacaca;
+}
+
+.caixa h2 {
+    padding: 10px 20px 0 20px;
+}
+
+.caixa2 p {
+    padding: 0 20px;
+}
