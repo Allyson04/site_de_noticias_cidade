@@ -7,7 +7,8 @@
     list-style-type: none;
 }
 
-.top {
+
+header{
     width: 100%;
     height: 250px;
 
@@ -15,7 +16,9 @@
 
 }
 
-.top img {
+/* Navegação Superior da página */
+
+header img {
     margin-top: 20px;
 }
 
@@ -28,7 +31,6 @@
     padding: 10px 0;
 
     background: url(../img/imagens/detalhe-topo.png) no-repeat top right;
-
 }
 
 nav {
@@ -49,7 +51,7 @@ nav .menu li {
 }
 
 nav ul.menu li:not(:first-child) {
-    border-left: 2px #2c040f dashed;
+    border-left: 1px #5e1125 dashed;
 }
 
 .menu a {
@@ -63,11 +65,49 @@ nav ul.menu li:not(:first-child) {
 }
 
 nav .menu li:hover {
-    background: rgb(255, 0, 0);
+    background: rgb(255, 28, 28);
 }
 
 nav .menu-off img {
     position: relative;
 
     float: left;
+}
+
+/* Seção de conteudo da pagina */
+
+div.content {
+    /* border: 1px solid red; */
+
+    width: 54%;
+    margin: 10px auto 0;
+}
+
+div.content aside {
+    width: 25%;
+
+    background: url(../img/imagens/fundo-caixa.png);
+}
+
+div.content aside h3 {
+    color: white;
+    font-size: 1.5em;
+    line-height: 30px;
+
+    margin: 5px;
+    padding: 7px;
+
+    background: #294C71;
+}
+
+div.content aside ul {
+    margin: 10px;
+
+    background: white;
+}
+
+div.content aside li {
+    padding: 15px;
+
+    font-size: 1.1em;
 }
