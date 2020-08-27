@@ -1,38 +1,73 @@
-.caixa{
-    width: 400px;
-    background: url(../img/arquivos-necessarios-arredondamento-com-imagens/fundo-arredondamento.png) repeat-y;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
 }
 
-.caixa h2 {
-    padding: 10px 20px 0 20px;
-    background: url(../img/arquivos-necessarios-arredondamento-com-imagens/topo2.png) no-repeat left top;
+.top {
+    width: 100%;
+    height: 250px;
+
+    background: #294C71 url(../img/imagens/fundo.png) repeat-x bottom;
+
 }
 
-.caixa p{
-    padding: 0 20px;
-    margin-bottom: 0;
+.top img {
+    margin-top: 20px;
 }
 
-.caixa div {
-    width: 400px;
-    height: 24px;
-    background: url(../img/arquivos-necessarios-arredondamento-com-imagens/baixo2.png) no-repeat left bottom;
+.menu-off {
+    width: 55%;
+    height: 220px;
+    /* box-sizing: content-box; */
+
+    margin: 0 auto;
+    padding: 10px 0;
+
+    background: url(../img/imagens/detalhe-topo.png) no-repeat top right;
+
 }
 
-.caixa2 {
-    width: 400px;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    background: #cacaca;
+nav {
+    margin-top: 20px;
+
+    width: 100%;
+    height: 50px;
 }
 
-.caixa h2 {
-    padding: 10px 20px 0 20px;
+nav .menu li {
+    height: 50px;
+
+    float: left;
+
+    background: #b0002e;
+    
+    padding: 0 25px;
 }
 
-.caixa2 p {
-    padding: 0 20px;
+nav ul.menu li:not(:first-child) {
+    border-left: 2px #2c040f dashed;
+}
+
+.menu a {
+    font-size: 1.2em;
+    color: white;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .menu li:hover {
+    background: rgb(255, 0, 0);
+}
+
+nav .menu-off img {
+    position: relative;
+
+    float: left;
 }
