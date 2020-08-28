@@ -129,43 +129,70 @@ div.post-section {
     width: 75%;
     
     display: grid;
-    grid-template-columns: 48%;
-    grid-template-rows: 50%;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 50% 50%;
     border: 1px solid red;
 
 }
 
 /* Postagens */
 
-article.post {
+article.post,
+article.flash-news {
     margin: 5px;
     padding: 10px;
     
     background: url(../img/imagens/fundo-caixa.png);  
+
+    box-sizing: content-box;
 }
 
-article.post div{
+#starred h4 {
+    color: white;
+    letter-spacing: 0;
+}
+
+article.post div,
+article.flash-news div {
     background: white;
     padding: 5px;
 }
 
 .post h4 {
-    width: 82%;
-    padding: 2px;
-    margin: 2px;
+    padding: 5px;
+    margin: 5px;
 
     background: red;
 
     font-size: 1.1em;
-    letter-spacing: -1.6px;
+    letter-spacing: -1px;
+
+    display: inline;
 }
 
 article.post img {
     width: 100%;
-    margin: 2px;
+    padding: 10px;
 }
 
 article.post a {
     text-decoration: underline;
     color: rgb(204, 0, 0);
+}
+
+/* Quadro de notícias */
+
+article.flash-news div.news {
+    padding: 10px;
+    border-top: 1px solid lightgray;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+article.flash-news div.news h4{
+    color: rgb(79, 161, 172);
+}
+
+article.flash-news img {
+    width: 35%;
 }
