@@ -77,19 +77,30 @@ nav .menu-off img {
 /* Seção de conteudo da pagina */
 
 div.content {
-    /* border: 1px solid red; */
+    border: 1px solid red;
 
-    width: 54%;
+    width: 60%;
+    height: 100%;
+
     margin: 10px auto 0;
+
+    display: flex;
+
+    justify-content: space-between;
 }
+
+/* seção Lateral da page */
 
 div.content aside {
     width: 25%;
 
     background: url(../img/imagens/fundo-caixa.png);
+    margin-right: 10px;
+
 }
 
-div.content aside h3 {
+div.content aside h3,
+div.content article h3 {
     color: white;
     font-size: 1.5em;
     line-height: 30px;
@@ -110,4 +121,51 @@ div.content aside li {
     padding: 15px;
 
     font-size: 1.1em;
+}
+
+/* Seção para postagens */
+
+div.post-section {
+    width: 75%;
+    
+    display: grid;
+    grid-template-columns: 48%;
+    grid-template-rows: 50%;
+    border: 1px solid red;
+
+}
+
+/* Postagens */
+
+article.post {
+    margin: 5px;
+    padding: 10px;
+    
+    background: url(../img/imagens/fundo-caixa.png);  
+}
+
+article.post div{
+    background: white;
+    padding: 5px;
+}
+
+.post h4 {
+    width: 82%;
+    padding: 2px;
+    margin: 2px;
+
+    background: red;
+
+    font-size: 1.1em;
+    letter-spacing: -1.6px;
+}
+
+article.post img {
+    width: 100%;
+    margin: 2px;
+}
+
+article.post a {
+    text-decoration: underline;
+    color: rgb(204, 0, 0);
 }
