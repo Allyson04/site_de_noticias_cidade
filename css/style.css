@@ -5,6 +5,7 @@
     text-decoration: none;
     color: black;
     list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -94,9 +95,18 @@ div.content {
 div.content aside {
     width: 25%;
 
-    background: url(../img/imagens/fundo-caixa.png);
     margin-right: 10px;
+}
 
+div.content aside .section-lado {
+    height: 464px;
+    margin-bottom: 15px;
+
+    background: url(../img/imagens/fundo-caixa.png);
+}
+
+div.content aside .section-lado#form-news{
+    height: 189px;
 }
 
 div.content aside h3,
@@ -111,7 +121,7 @@ div.content article h3 {
     background: #294C71;
 }
 
-div.content aside ul {
+div.content aside ul{
     margin: 10px;
 
     background: white;
@@ -121,6 +131,46 @@ div.content aside li {
     padding: 15px;
 
     font-size: 1.1em;
+}
+
+div.content aside li:hover {
+    color: gray;
+    list-style-image: url(../img/imagens/marcador.png);
+    list-style-position: inside;
+}
+
+div.content aside form {
+    font-size: 1.2em;
+
+    margin: 10px;
+    padding: 5px 15px 5px 5px;
+
+    background: white;
+}
+
+div.content aside form p{
+    margin: 5px;
+}
+
+div.content aside input {
+    width: 100%;
+    margin: 5px;
+
+    font-size: 1em;
+}
+
+div.content aside button {
+    padding: 5px;
+    margin: 5px;
+
+    font-size: 1em;
+    color: white;
+
+    background: rgb(156, 2, 2);
+}
+
+div.content aside button:hover {
+    background: red;
 }
 
 /* Seção para postagens */
