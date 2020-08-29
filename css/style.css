@@ -51,6 +51,16 @@ nav .menu li {
     padding: 0 25px;
 }
 
+body#home nav li.home,
+body#brasil nav li.brasil,
+body#internacional nav li.internacional,
+body#economia nav li.economia,
+body#saude nav li.saude,
+body#ciencia nav li.ciencia,
+body#fotos nav li.fotos {
+    background: rgb(255, 28, 28);
+}
+
 nav ul.menu li:not(:first-child) {
     border-left: 1px #5e1125 dashed;
 }
@@ -180,6 +190,19 @@ div.post-section {
     grid-template-rows: 50% 50%;
 }
 
+body.page-news div.post-section {
+    display: flex;
+    flex-direction: column;
+}
+
+body.gallery div.post-section {
+    width: 75%;
+    
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+}
+
 /* Postagens */
 
 article.post,
@@ -205,19 +228,33 @@ article.flash-news div {
     background: red;
 
     font-size: 1.1em;
-    letter-spacing: -1px;
-
-    display: inline;
-}
-
-#starred h4 {
     color: white;
     letter-spacing: 0;
+
+    display: inline;
 }
 
 article.post img {
     width: 100%;
     padding: 10px;
+}
+
+body.gallery div.post-section img {
+    width: 90%;
+    margin: auto;
+}
+
+body.gallery div.post-section img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
 }
 
 article.post a {
@@ -234,8 +271,20 @@ article.flash-news div.news {
     display: flex;
 }
 
+body.page-news article.flash-news div.news {
+    height: 30%;
+    
+    font-size: 1em;
+
+}
+
+body.page-news article.flash-news div.news img{
+    width: 20%;
+}
+
 article.flash-news div.news h4{
     color: rgb(79, 161, 172);
+    font-size: 1.3em;
 }
 
 article.flash-news img {
