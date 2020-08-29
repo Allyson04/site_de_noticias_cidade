@@ -78,10 +78,7 @@ nav .menu-off img {
 /* Seção de conteudo da pagina */
 
 div.content {
-    border: 1px solid red;
-
     width: 60%;
-    height: 100%;
 
     margin: 10px auto 0;
 
@@ -99,14 +96,15 @@ div.content aside {
 }
 
 div.content aside .section-lado {
-    height: 464px;
+    height: 484px;
     margin-bottom: 15px;
+    padding: 10px;
 
     background: url(../img/imagens/fundo-caixa.png);
 }
 
 div.content aside .section-lado#form-news{
-    height: 189px;
+    height: 209px;
 }
 
 div.content aside h3,
@@ -115,7 +113,6 @@ div.content article h3 {
     font-size: 1.5em;
     line-height: 30px;
 
-    margin: 5px;
     padding: 7px;
 
     background: #294C71;
@@ -179,17 +176,15 @@ div.post-section {
     width: 75%;
     
     display: grid;
-    grid-template-columns: 48% 48%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    border: 1px solid red;
-
 }
 
 /* Postagens */
 
 article.post,
 article.flash-news {
-    margin: 5px;
+    margin: 0 5px 10px;
     padding: 10px;
     
     background: url(../img/imagens/fundo-caixa.png);  
@@ -197,15 +192,10 @@ article.flash-news {
     box-sizing: content-box;
 }
 
-#starred h4 {
-    color: white;
-    letter-spacing: 0;
-}
-
 article.post div,
 article.flash-news div {
     background: white;
-    padding: 5px;
+    padding: 10px;
 }
 
 .post h4 {
@@ -218,6 +208,11 @@ article.flash-news div {
     letter-spacing: -1px;
 
     display: inline;
+}
+
+#starred h4 {
+    color: white;
+    letter-spacing: 0;
 }
 
 article.post img {
