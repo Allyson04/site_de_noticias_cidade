@@ -203,12 +203,20 @@ body.page-news div.post-section {
 article.post,
 article.flash-news,
 div.galeria {
-    margin: 0 5px 10px;
-    padding: 20px;
+    margin: 10px;
+    padding: 15px;
     
     background: url(../img/imagens/fundo-caixa.png);  
 
     box-sizing: content-box;
+}
+
+body.page-news article.post{
+    padding: 20px;
+}
+
+body#home article.flash-news {
+    padding-bottom: 30px;
 }
 
 article.post div,
