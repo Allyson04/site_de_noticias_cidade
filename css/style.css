@@ -230,6 +230,7 @@ article.flash-news div {
     font-size: 1.1em;
     color: white;
     letter-spacing: 0;
+    text-transform: uppercase;
 
     display: inline;
 }
