@@ -1,0 +1,54 @@
+body#fotos div.content {
+    width: 70%;
+}
+
+div.galeria {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+div.galeria div {
+    background: white;
+    
+    width: 95%;
+
+    margin: auto;
+}
+
+body#fotos div.galeria div.title  {
+    padding: 10px;
+}
+
+div.galeria div p{
+    margin: 10px;
+}
+
+body#fotos div.galeria div.fotos {
+    margin: auto auto 23px;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+body#fotos div.galeria div.fotos img {
+    width: 80%;
+    margin: 20px;
+}
+
+body#fotos div.galeria div.fotos img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}

@@ -118,7 +118,8 @@ div.content aside .section-lado#form-news{
 }
 
 div.content aside h3,
-div.content article h3 {
+div.content article h3,
+div.galeria h3 {
     color: white;
     font-size: 1.5em;
     line-height: 30px;
@@ -184,7 +185,9 @@ div.content aside button:hover {
 
 div.post-section {
     width: 75%;
-    
+}
+
+body#home div.post-section {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
@@ -195,20 +198,13 @@ body.page-news div.post-section {
     flex-direction: column;
 }
 
-body.gallery div.post-section {
-    width: 75%;
-    
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 30% 30% 30%;
-}
-
 /* Postagens */
 
 article.post,
-article.flash-news {
+article.flash-news,
+div.galeria {
     margin: 0 5px 10px;
-    padding: 10px;
+    padding: 20px;
     
     background: url(../img/imagens/fundo-caixa.png);  
 
@@ -216,12 +212,13 @@ article.flash-news {
 }
 
 article.post div,
-article.flash-news div {
+article.flash-news div{
     background: white;
     padding: 10px;
 }
 
-.post h4 {
+.post h4,
+div.galeria h4 {
     padding: 5px;
     margin: 5px;
 
@@ -238,24 +235,6 @@ article.flash-news div {
 article.post img {
     width: 100%;
     padding: 10px;
-}
-
-body.gallery div.post-section img {
-    width: 90%;
-    margin: auto;
-}
-
-body.gallery div.post-section img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transition: transform 0.5s;
-    -webkit-transition: transform 0.5s;
-    -moz-transition: transform 0.5s;
-    -ms-transition: transform 0.5s;
-    -o-transition: transform 0.5s;
 }
 
 article.post a {
